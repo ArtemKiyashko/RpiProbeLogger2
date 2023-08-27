@@ -12,10 +12,12 @@
     <PackageReference Include="Microsoft.Extensions.Logging" Version="7.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="7.0.0" />
+    <PackageReference Include="System.IO.Ports" Version="7.0.0" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Options\" />
     <None Remove="Infrastructure\" />
+    <None Remove="Extensions\" />
   </ItemGroup>
   <ItemGroup>
     <None Update="appsettings.json">
@@ -25,5 +27,9 @@
   <ItemGroup>
     <Folder Include="Options\" />
     <Folder Include="Infrastructure\" />
+    <Folder Include="Extensions\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SharedModels\SharedModels.csproj" />
   </ItemGroup>
 </Project>
