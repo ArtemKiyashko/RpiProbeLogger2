@@ -1,5 +1,4 @@
-﻿using System;
-namespace DataCollector.Infrastructure
+﻿namespace DataCollector.Infrastructure
 {
 	public interface ISerialPort
 	{
